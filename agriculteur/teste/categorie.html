@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catégorie - Hydroculture225</title>
+    <link rel="stylesheet" href="categorie.css">
+</head>
+<body>
+    <header>
+        <h1>Produits en vente</h1>
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="panier.php">Voir le panier 🛒</a>
+        </nav>
+    </header>
+
+    <main class="product-list">
+        <!-- Exemple de produit -->
+        <div class="product-card">
+            <img src="images/tomates.jpg" alt="Tomates">
+            <h3>Tomates Bio</h3>
+            <p>500 FCFA / kg</p>
+            <button class="add-to-cart">Ajouter au panier</button>
+        </div>
+
+        <div class="product-card">
+            <img src="images/salade.jpg" alt="Salade">
+            <h3>Salade verte</h3>
+            <p>300 FCFA / pièce</p>
+            <form method="post" action="ajout_panier.php">
+                <input type="hidden" name="id" value="123">
+                <button class="add-to-cart" type="submit">Ajouter au panier</button>
+            </form>
+    
+        </div>
+
+        <div class="product-card">
+            <img src="images/menthe.jpg" alt="Menthe">
+            <h3>Menthe fraîche</h3>
+            <p>250 FCFA / botte</p>
+            <button class="add-to-cart">Ajouter au panier</button>
+        </div>
+
+        <!-- Tu peux dupliquer ce bloc pour chaque produit -->
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Hydroculture225 - Tous droits réservés.</p>
+    </footer>
+
+    <script>
+        // Animation clic sur "Ajouter au panier"
+        const buttons = document.querySelectorAll('.add-to-cart');
+        buttons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                btn.textContent = "✔️ Ajouté !";
+                btn.disabled = true;
+                setTimeout(() => {
+                    btn.textContent = "Ajouter au panier";
+                    btn.disabled = false;
+                }, 1500);
+            });
+        });
+    </script>
+</body>
+</html>
