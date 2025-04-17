@@ -1,0 +1,23 @@
+body{ 
+font-family: Arial, sans-serif;
+background-image:url(images/img4.png.JPG);
+background-repeat: repeat;
+background-attachment: scroll;
+}
+.conctat {
+    margin: auto;
+    width:500px;
+    background: rgb(209, 241, 231);
+padding:20px;
+border: radius 8px;
+box-shadow:0 0 10px rgba(0, 0,0,0.1);
+}
+.nom {
+    text-align: center;
+}
+.cv{
+    background-color: rgb(238, 238, 238);
+}
+.compte{
+    text-align: center;
+}

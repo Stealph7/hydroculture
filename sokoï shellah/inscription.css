@@ -1,0 +1,153 @@
+/* Style général */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f9f2; /* vert très pâle, esprit nature */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Conteneur principal avec shadow et layout horizontal */
+.container {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    width: 90%;
+    max-width: 1000px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 16px;
+    overflow: hidden;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Colonne de gauche - image et titre */
+.left {
+    flex: 1;
+    background: url('images/img4.png.JPG') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4b8d5b; /* couleur de secours si l’image ne charge pas */
+    color: white;
+    padding: 20px;
+}
+
+.left h1 {
+    font-size: 26px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 15px;
+    border-radius: 12px;
+    animation: slideDown 1s ease;
+}
+
+.left h1 span {
+    color: #c7f2c1; /* vert clair pour le mot "Bienvenue" */
+}
+
+/* Colonne de droite - formulaire */
+.right {
+    flex: 1;
+    background-color: white;
+    padding: 30px;
+    animation: slideUp 1s ease;
+}
+
+form {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+p {
+    margin-bottom: 16px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #2d572c;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #b3cbb3;
+    border-radius: 8px;
+    background-color: #f6fff6;
+    transition: border 0.3s;
+}
+
+input:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+input[type="radio"] {
+    margin-right: 6px;
+}
+
+.button {
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+    width: 100%;
+}
+
+.button:hover {
+    background-color: #3c8d40;
+    transform: scale(1.05);
+}
+
+/* Centrage bouton */
+.nom {
+    text-align: center;
+}
+
+/* Animations d'entrée */
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes slideDown {
+    from { transform: translateY(-30px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes slideUp {
+    from { transform: translateY(30px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+/* 🌿 Responsive mobile */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        margin: 20px;
+    }
+
+    .left, .right {
+        width: 100%;
+    }
+
+    .left {
+        min-height: 200px;
+    }
+
+    .left h1 {
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,61 @@
+/* Styles généraux */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    background-color: green;
+    padding: 20px;
+}
+
+footer {
+    text-align: center;
+    background-color: green;
+    color: white;
+    padding: 10px;
+}
+
+.main-content {
+    padding: 20px;
+}
+
+/* Sections */
+.section {
+    margin-bottom: 40px;
+}
+
+.section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Images adaptatives */
+.responsive-img {
+    max-width: 100%; /* Largeur maximale à 100% du conteneur */
+    height: auto; /* Hauteur automatique pour préserver les proportions */
+    display: block; /* Pour centrer l'image */
+    margin: 10px auto; /* Centrage horizontal avec un espace autour */
+}
+
+/* Liens */
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Listes */
+ol, ul {
+    margin-left: 20px;
+}
+
+ol li, ul li {
+    margin-bottom: 10px;
+}

@@ -1,0 +1,94 @@
+/* Mise en page responsive + moderne */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-image: url('images/img6.png.JPG');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Conteneur central */
+.container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 400px;
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+/* Formulaire */
+.form-box h2 {
+    margin-bottom: 20px;
+    color: #2f4f4f;
+}
+
+label {
+    display: block;
+    text-align: left;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: #4caf50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+.button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #388e3c;
+}
+
+.link {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.link a {
+    color: #2e7d32;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.link a:hover {
+    text-decoration: underline;
+}
+
+/* Animation d'apparition */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

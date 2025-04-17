@@ -1,0 +1,116 @@
+/* ====== Général ====== */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f7fa;
+    color: #333;
+}
+
+/* ====== En-tête ====== */
+header {
+    width: 100%;
+    background: linear-gradient(to right, #006400, #228B22);
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+/* ====== Pied de page ====== */
+footer {
+    text-align: center;
+    background: #228B22;
+    color: white;
+    padding: 15px;
+    font-size: 14px;
+}
+
+/* ====== Contenu principal ====== */
+.main-content {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* ====== Sections ====== */
+.section {
+    background: white;
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.section h2 {
+    font-size: 26px;
+    color: #228B22;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* ====== Images ====== */
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Images adaptatives */
+.responsive-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+/* ====== Liens ====== */
+a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
+
+/* ====== Listes ====== */
+ol, ul {
+    margin-left: 20px;
+    padding-left: 20px;
+}
+
+ol li, ul li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+/* ====== Boutons ou liens vidéos ====== */
+a[target="_blank"]::after {
+    content: ' 🔗';
+}
+
+/* ====== Responsive Design ====== */
+@media screen and (max-width: 768px) {
+    .main-content {
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 22px;
+    }
+
+    .section h2 {
+        font-size: 22px;
+    }
+}
