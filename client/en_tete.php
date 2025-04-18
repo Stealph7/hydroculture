@@ -156,7 +156,7 @@
                 <li><a href="tutoriel.php" class="nav-link"><i class="fas fa-book-open"></i> TUTORIEL</a></li>
                 <li><a href="panier.php" class="nav-link"><i class="fas fa-shopping-cart"></i> PANIER</a></li>
                 <li><a href="contact.html" class="nav-link"><i class="fas fa-envelope"></i> CONTACT</a></li>
-                <li><a href="profil.html" class="nav-link"><i class="fas fa-user"></i> PROFIL</a></li>
+                <li><a href="../profil.php" class="nav-link"><i class="fas fa-user"></i> PROFIL</a></li>
             </ul>
         </nav>
     </header>

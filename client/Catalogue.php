@@ -1,4 +1,6 @@
-
+<?php 
+    require('config.php');
+?>
 
 <!doctype html>
 <html>
@@ -154,25 +156,32 @@
       });
   </script>
   <div class="add-product-button">
-    <a href="ajout_produit.php" class="btn-sell-product">Vendre un produit</a>
+    <a href="ajouter_produit.php" class="btn-sell-product">Vendre un produit</a>
   </div>
   
   <main class="product-list">
   
       
 
-      <div class="product-card">
-        <img src="../images/image_catal/basilic.jfif" alt="Basilic">
-        <h3>BASILIC</h3>
-        <p>300 FCFA / pièce</p>
-        <button class="add-to-cart">Ajouter au panier</button>
-      </div>
+  <div class="product-card">
+    <img src="../images/image_catal/basilic.jfif" alt="Basilic">
+    <h3>BASILIC</h3>
+    <p>300 FCFA / pièce</p>
+    
+    <form method="POST" action="ajouter_panier.php">
+        <input type="hidden" name="produit_id" value="1"> <!-- ID réel du produit -->
+        <input type="hidden" name="produit_nom" value="BASILIC">
+        <input type="hidden" name="produit_prix" value="300">
+        <input type="hidden" name="quantite" value="1">
+        <button type="submit" name="ajouter_panier">Ajouter au panier</button>
+    </form>
+  </div>
 
       <div class="product-card">
         <img src="../images/image_catal/epinard2.jpg" alt="Epinard">
         <h3>Epinard</h3>
         <p>300 FCFA / pièce</p>
-        <button class="add-to-cart">Ajouter au panier</button>
+        <button class="add-to-cart" name="ajouter_panier">Ajouter au panier</button>
       </div>
       
 

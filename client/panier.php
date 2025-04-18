@@ -91,6 +91,6 @@ if (isset($_POST['clear_cart'])) {
         <p>Votre panier est vide.</p>
     <?php endif; ?>
 
-    <a href="index.php">Continuer vos achats</a>
+    <a href="catalogue.php">Continuer vos achats</a>
 </body>
 </html>
